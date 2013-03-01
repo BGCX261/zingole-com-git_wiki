@@ -123,6 +123,7 @@ bouton action:
 
 ===Voter===
 il y a un tableau à plusieurs colonnes, les lignes sont affichées du vote le  plus récent en haut de tableau au plus ancien en bas de tableau. Cependant un vote en cours plus anciens sera forcement en tete de tableau
+
 le format des lignes est:
 
 pour un vote en cours:
@@ -159,7 +160,7 @@ affiche le tableau de toutes ses zingolerie terminées
 affiche l'avatar et de pseudo du zingole concerné
 
 affiche un tableau avec l'ensemble des couples pseudo/ notes de tous les votes pour cette zingolerie
-
+||zingole votant||note attribuée||date de vote||
 
 
 ===maj bdd===
