@@ -2,12 +2,9 @@
 
 = Introduction =
 
+=== Zingole.com ===
 Toutes les informations relatives à zingole.com
 
-
-= Zingole.com =
-
-==Général==
 Le site permet à quiconque de s'inscrire.
 Chaque user inscrit (appelé zingole) peut dénoncer une zingolerie. Toute zingolerie dénoncée entraine le vote de l'ensemble des zingoles sauf le zingole concerné.
 Une fois le vote terminé, une maj est effectué; le zingole est crédité du nombre de points.
@@ -16,7 +13,7 @@ Il est possible d'avoir le détail des votes sur une zingolerie
 On peut observer le profil de chaque zingole
 
 
-==Composition page web==
+=Composition page web=
 ==header==
 
 contient
@@ -42,9 +39,9 @@ dans le panneau latérale qui permet la navigation entre les pages...
 tout le contenu détaillé dans la partie suivante
 
 
-==Technique==
+=Technique=
 
-===Accueil // Historique zingolerie===
+==Accueil // Historique zingolerie==
 
 on affiche les trois tableau les uns ou dessus des autres?
 ou l'on décide quel tableau on affiche?
@@ -60,7 +57,7 @@ affiche le top zingole (possibilité de trier par nbr de zg ou nbr de pts)
 affiche le top zingolerie (si nbr pts== la plus récente en haut)
 ||rang||note attribuée||zignole victime||type||le motif||zingole dénonciateur||date de fin vote||
 
-===Inscription===
+==Inscription==
 un formulaire avec les champs
  * email {{{type_html:input}}}
  * pseudo {{{type_html:input}}}
@@ -72,7 +69,7 @@ un formulaire avec les champs
 et le bouton d'action
  * valider inscription
 
-===Connexion===
+==Connexion==
 un formulaire avec les champs:
  * pseudo {{{type_html:input}}}
  * password {{{type_html:password}}}
@@ -81,7 +78,7 @@ et le bouton d'action
 
 Un lien vers une page mot de passe perdu? (pas dans la version de base)
 
-===mon compte===
+==mon compte==
 Permet de changer notre adresse email
 
   un formulaire avec le champ
@@ -113,7 +110,7 @@ Permet de changer notre avatar
    * upload avatar
 
 
-===Dénoncer zingolerie===
+==Dénoncer zingolerie==
 Page contenant un formulaire avec le champs
  * zingole {{{type_html:select}}}
  * description {{{type_html:text}}} (100 caractères)
@@ -121,7 +118,7 @@ Page contenant un formulaire avec le champs
 bouton action:
  * valider
 
-===Voter===
+==Voter==
 il y a un tableau à plusieurs colonnes, les lignes sont affichées du vote le  plus récent en haut de tableau au plus ancien en bas de tableau. Cependant un vote en cours plus anciens sera forcement en tete de tableau
 
 le format des lignes est:
@@ -144,7 +141,7 @@ pour un vote terminé et voté et invalidé:
 
 
 
-===Profil zingole===
+==Profil zingole==
 affiche l'avatar
 
 affiche son nombre de points
@@ -155,7 +152,7 @@ affiche le tableau de toutes ses zingolerie terminées
 (affiche le tableau des zingoleries dénoncées terminées ?)
 ||date de fin vote||type||le motif||zingole victime||note attribuée||
 
-===zingolerie en detail===
+==zingolerie en detail==
 
 affiche l'avatar et de pseudo du zingole concerné
 
@@ -163,7 +160,7 @@ affiche un tableau avec l'ensemble des couples pseudo/ notes de tous les votes p
 ||zingole votant||note attribuée||date de vote||
 
 
-===maj bdd===
+==maj bdd==
 
 cette mise a jour se fera avec une page PHP, que l'on appelera toutes les minutes au moyen d'une tache cron
 en x étapes:
@@ -195,7 +192,7 @@ on ne fait rien
 dans la table des users, on fait la mise a jour de ses points en faisant simplement la somme de toutes les zingoleries qui lui sont attribuées 
 
 
-==Sécurité==
+=Sécurité=
 
-===gestion des sessions===
-===autorisation des acces aux pages===
+==gestion des sessions==
+==autorisation des acces aux pages==
