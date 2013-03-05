@@ -193,6 +193,7 @@ dans la table des users, on fait la mise a jour de ses points en faisant simplem
 
 
 =Sécurité=
-
-==gestion des sessions==
-==autorisation des acces aux pages==
+==Suivi de session==
+==Autorisations des accès aux pages==
+==Cryptage des mots de passe==
+==Contrôle des données saisies==
