@@ -194,6 +194,11 @@ dans la table des users, on fait la mise a jour de ses points en faisant simplem
 
 =Sécurité=
 ==Suivi de session==
+Activer le suivi de session et support des cookies
+Systeme parallèle pour les connexions qui n'acceptent pas les cookies
 ==Autorisations des accès aux pages==
+Espace zone membre
 ==Cryptage des mots de passe==
+Utilisation du SHA256 + Salt
 ==Contrôle des données saisies==
+HTMLEntity pour eviter les XSS
